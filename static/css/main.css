@@ -1,0 +1,160 @@
+/* === Google Font Import - Poppins === */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/montserrat');
+
+*{
+    font-family: 'Poppins', sans-serif;
+  }
+
+body {
+    height: 90vh;
+    z-index: 0;
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+    background: url("wrapped.jpeg") no-repeat center center fixed; 
+    background-size:contain;
+    background-color: #121212;
+
+}
+
+.simple_text {
+    text-align: center;
+    font-family: 'Montserrat';
+    color: rgb(255, 255, 125);
+    font-size: 54px;
+    padding: 23% 30% 0% 30%;
+}
+
+.form_container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top:30%;
+}
+
+::placeholder {
+    color: white;
+    font-weight: normal;
+    opacity: 0.75;
+  }
+
+input {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  height: 100px;
+  border: none;
+  border-radius: 20px;
+  font-size: 44px;
+  text-align: center;
+  display: block;
+  background-color: #6A00BA;
+  font-weight: bold;
+  color: white;
+}
+
+input:focus {
+    outline: none;
+    background-color: #9440d4;
+    /* opacity: 0.5; */
+    transition: 0.2s; 
+    z-index: -1;
+}
+
+.item1 { grid-area: header2;
+    height:800px;
+    display: flex;
+    align-items: center;
+}
+.item2 { grid-area: top_left;     
+  text-align: left;
+}
+.item3 { grid-area: top_right; 
+    text-align: left;
+}
+.item4 { grid-area: bot_left;
+    text-align: left;
+    margin-left: 35px;
+}
+.item5 { grid-area: bot_right;
+    text-align: left;
+    margin-left: 35px;
+}
+
+.item6 { grid-area: footer;
+    text-align: left;
+    font-size: 22px;
+    vertical-align:bottom;
+    margin-left: 35px;
+}
+
+.list_title {
+    font-weight: bolder;
+    margin-top: 0px;
+    color: white;
+}
+
+.list {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 30px 0px;
+}
+
+ul {
+    line-height:35px;
+}
+
+.big-title {
+    font-weight: bolder;
+    margin-top: 0px;
+    color: white;
+}
+
+.hashtag {
+    color: #9440d4;
+}
+
+.big-num {
+    font-weight: bold;
+    font-size: 45px;
+    /* margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px; */
+}
+
+.grid-container {
+  display: grid;
+  grid-template:
+    'header2 header2'
+    'top_left top_right'
+    'bot_left bot_right'
+    'footer footer';
+  grid-template-rows: 5fr 3fr 1fr 1fr;
+  grid-gap: 0px;
+  /* background-color: blue; */
+  padding: 5px;
+  height:80vh;
+}
+
+.grid-container > div {
+  padding: 20px 10px;
+  font-size: 38px;
+  color: rgb(255, 255, 94);
+  /* border-style: solid; 
+  border-color: red; */
+}
+
+.book-cover {
+    background: linear-gradient(to right, rgb(60, 13, 20) 3px, rgba(255, 255, 255, 0.5) 5px, rgba(255, 255, 255, 0.25) 7px, rgba(255, 255, 255, 0.25) 10px, transparent 12px, transparent 16px, rgba(255, 255, 255, 0.25) 17px, transparent 22px);
+    box-shadow: 0 0 12px -1px black, inset -1px 2px 4px rgba(255, 255, 255, 0.5);
+    margin: auto;
+    border-radius: 5px;
+    width: 400px;
+    text-align: center;
+    vertical-align: center;
+    margin: auto;
+    /* border-bottom:  15px solid #000000;
+    border-right:   15px solid  #000000; */
+}

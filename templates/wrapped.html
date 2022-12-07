@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>wrapped Scout</title>
+{% endblock %}
+
+{% block body %}
+<script>
+var svg = '{{ svg }}';
+</script>
+
+<div class="grid-container">
+    <!-- <div class="item0"></div> -->
+    <div class="item1"><img src='{{ covers[0] }}' class="book-cover"></div>
+    <div class="item2">
+        <ul class ="list_title">HIGHEST RATED</ul>
+        <ul class="list">{{ top_5_books[0] }}</ul>
+        <ul class="list">{{ top_5_books[1] }}</ul>
+        <ul class="list">{{ top_5_books[2] }}</ul>
+        <ul class="list">{{ top_5_books[3] }}</ul>
+        <ul class="list">{{ top_5_books[4] }}</ul>
+    </div>
+    <div class="item3">     
+        <ul class ="list_title">MOST READ GENRES</ul>
+        <ul class="list">{{ top_5_genres[0] }}</ul>
+        <ul class="list">{{ top_5_genres[1] }}</ul>
+        <ul class="list">{{ top_5_genres[2] }}</ul>
+        <ul class="list">{{ top_5_genres[3] }}</ul>
+        <ul class="list">{{ top_5_genres[4] }}</ul>
+    </div>  
+    <div class="item4"><span class='big-title'>BOOKS READ</span><br><span class='big-num'>{{ books_read }}</span></div>
+    <div class="item5"><span class='big-title'>PAGES TURNED</span><br><span class='big-num'>{{ pages_read }}</span></div>
+    <div class="item6"><span class='hashtag'>&#35;GOODREADS<b>2022</b>WRAPPED</span></div>
+  </div>
+
+<script>
+</script>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>wrapped Scout</title>
+{% endblock %}
+
+{% block body %}
+<div class="simple_text">
+    <h3>GoodReads 2022 Wrapped</h3>
+</div>
+<br>
+<div class="form_container">
+    <form action="wrapped" method="post" class="form" autocomplete="off">
+        <input type="text" name="goodreads_user_id" placeholder="Your User ID, e.g. 59826157" autocomplete="off">
+        <input type="submit" value="SUBMIT" id="greet" onclick="func">
+    </form>
+</div>
+
+<script type="text/javascript">
+function func(){
+    document.getElementById("greet").getElementsByTagName("input")[1].value = 'property set';
+    console.log("updating....")
+}  
+</script>
+
+{% endblock %}
